@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "build": "cd frontend && npm install && npm run build",
-    "start": "nodemon --watch backend --exec node --experimental-modules api/server.js"
+    "start": "nodemon --watch api --exec node --experimental-modules api/server.js"
   },
   "keywords": [],
   "author": "",

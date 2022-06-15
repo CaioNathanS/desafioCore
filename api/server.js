@@ -1,6 +1,7 @@
 import express from 'express'
 import mongoose from 'mongoose';
 import userRouter from './routers/userRouter.js';
+import ubsRouter from './routers/ubsRouter.js';
 
 
 
@@ -23,6 +24,7 @@ mongoose.connect(process.env.MONGODB_URL || 'mongodb://localhost:27017/desafio',
 });
 
 app.use('/api/users', userRouter);
+app.use('/api/ubs', ubsRouter);
 
 
 
